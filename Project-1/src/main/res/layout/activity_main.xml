@@ -9,7 +9,7 @@
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:background="@drawable/Background" />
+        android:background="@drawable/background" />
 
     <Button
         android:layout_width="fill_parent"
@@ -19,6 +19,49 @@
         android:background="#00ff02"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:id="@+id/building1TextArea"
+        android:layout_marginTop="105dp"
+        android:background="#372d20"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:id="@+id/building2TextArea"
+        android:layout_marginTop="218dp"
+        android:background="#6f7067"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:id="@+id/graphsOfBothBtn"
+        android:layout_marginTop="318dp"
+        android:text="Charts of both buildings"
+        android:textColor="#ffff"
+        android:background="#372d20"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:id="@+id/reportsOfBothBtn"
+        android:layout_marginTop="418dp"
+        android:background="#372d20"
+        android:text="Reports of both buildings"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
 
     <Button
         android:layout_width="fill_parent"
@@ -34,18 +77,19 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Building 1"
-        android:id="@+id/textView"
+        android:id="@+id/buildiong1Txt"
         android:layout_alignTop="@+id/button"
         android:layout_alignParentLeft="true"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="5dp" />
+        android:layout_marginLeft="5dp"
+        android:longClickable="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Building 2"
-        android:id="@+id/textView2"
+        android:id="@+id/building2Txt"
         android:layout_alignTop="@+id/building2Btn"
         android:layout_alignParentLeft="true"
         android:layout_marginTop="15dp"
@@ -72,4 +116,11 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="15dp"
         android:layout_marginRight="5dp" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:id="@+id/quickMenuBtn"
+        android:background="@drawable/quickmenu" />
+
 </RelativeLayout>
