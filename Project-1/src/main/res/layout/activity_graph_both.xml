@@ -11,34 +11,4 @@
         android:layout_alignParentLeft="true"
         android:background="@drawable/background" />
 
-    <SeekBar
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:id="@+id/seekBar"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="50dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Daily"
-        android:textColor="#ffff"
-        android:id="@+id/txtDaily"
-         />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="50dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Daily"
-        android:textColor="#ffff"
-        android:id="@+id/txtWeekly"
-        />
-
 </RelativeLayout>
