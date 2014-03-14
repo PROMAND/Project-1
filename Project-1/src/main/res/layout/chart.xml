@@ -53,23 +53,24 @@
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New CheckBox"
+            android:text="Building 2"
             android:id="@+id/checkBox"
             android:layout_column="0"
             android:layout_span="2"/>
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New CheckBox"
-            android:id="@+id/checkBox2"
-            android:layout_column="0" />
     </TableRow>
 
     <TableRow
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Building 1"
+            android:id="@+id/checkBox2"
+            android:layout_column="0"
+            android:layout_span="2" />
     </TableRow>
 
 </TableLayout>
