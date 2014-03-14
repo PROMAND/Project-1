@@ -24,7 +24,8 @@ public class MainActivity extends ActionBarActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i = new Intent(getApplicationContext(),graphBoth.class);
+                startActivity(i);
             }
         });
 
