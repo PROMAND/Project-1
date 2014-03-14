@@ -6,5 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_graph_both">graphBoth</string>
     <string name="title_activity_report_both">reportBoth</string>
+    <string name="title_activity_report_of_both">reportOfBoth</string>
 
 </resources>

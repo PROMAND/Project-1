@@ -121,6 +121,7 @@
         android:layout_width="60dp"
         android:layout_height="55dp"
         android:id="@+id/quickMenuBtn"
-        android:background="@drawable/quickmenu" />
+        android:background="@drawable/quickmenu"
+        />
 
 </RelativeLayout>

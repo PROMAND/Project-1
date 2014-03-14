@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.os.Build;
 import android.widget.Button;
 
-public class MainActivity extends ActionBarActivity implements View.OnClickListener {
+public class MainActivity extends ActionBarActivity {
     Button button1,btn2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,12 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         button1 = (Button) findViewById(R.id.graphsOfBothBtn);
         btn2 = (Button) findViewById(R.id.reportsOfBothBtn);
-        button1.setOnClickListener(this);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
     }
 
@@ -45,15 +50,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         }
         return super.onOptionsItemSelected(item);
     }
-    private void onGraphBothClick(){
-        startActivity(new Intent("pl.byd.wsg.promand.project1.graphBoth"));
-    }
-    @Override
-    public void onClick(View view) {
-        switch ((view.getId())){
-            case R.id.graphsOfBothBtn:
-                onGraphBothClick();
-                break;
-        }
-    }
+
+
+
 }

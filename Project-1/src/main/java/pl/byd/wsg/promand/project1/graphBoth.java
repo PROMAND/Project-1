@@ -18,11 +18,11 @@ public class graphBoth extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_graph_both);
 
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
-                    .commit();
-        }
+//        if (savedInstanceState == null) {
+//            getSupportFragmentManager().beginTransaction()
+//                    //.add(R.id.container, new PlaceholderFragment())
+//                    .commit();
+//        }
     }
 
 
