@@ -9,7 +9,7 @@
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:background="@drawable/background" />
+        />
 
     <Button
         android:layout_width="fill_parent"
