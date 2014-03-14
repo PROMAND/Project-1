@@ -59,8 +59,8 @@
         android:layout_marginTop="418dp"
         android:background="#372d20"
         android:text="Reports of both buildings"
-        android:onClick="openReport"
         android:textStyle="bold"
+        android:onClick="openGraph"
         android:textColor="#ffff"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true" />
@@ -80,7 +80,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Building 1"
-        android:id="@+id/buildiong1Txt"
+        android:id="@+id/building1txt"
         android:layout_alignTop="@+id/button"
         android:layout_alignParentLeft="true"
         android:layout_marginTop="15dp"
@@ -126,5 +126,7 @@
         android:id="@+id/quickMenuBtn"
         android:background="@drawable/quickmenu"
         />
+
+
 
 </RelativeLayout>

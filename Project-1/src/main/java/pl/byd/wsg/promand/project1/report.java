@@ -11,18 +11,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 
-public class graphBoth extends ActionBarActivity {
+public class report extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_graph_both);
+        setContentView(R.layout.activity_report);
 
-//        if (savedInstanceState == null) {
-//            getSupportFragmentManager().beginTransaction()
-//                    //.add(R.id.container, new PlaceholderFragment())
-//                    .commit();
-//        }
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.container, new PlaceholderFragment())
+                    .commit();
+        }
     }
 
 
@@ -30,7 +30,7 @@ public class graphBoth extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.graph_both, menu);
+        getMenuInflater().inflate(R.menu.report, menu);
         return true;
     }
 
@@ -57,7 +57,7 @@ public class graphBoth extends ActionBarActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_graph_both, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_report, container, false);
             return rootView;
         }
     }

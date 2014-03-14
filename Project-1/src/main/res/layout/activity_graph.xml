@@ -3,5 +3,5 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="pl.byd.wsg.promand.project1.reportOfBoth"
+    tools:context="pl.byd.wsg.promand.project1.graph"
     tools:ignore="MergeRootFrame" />

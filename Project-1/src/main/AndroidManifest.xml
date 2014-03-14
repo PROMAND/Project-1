@@ -17,20 +17,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="pl.byd.wsg.promand.project1.graphBoth"
-            android:label="@string/title_activity_graph_both" >
+            android:name="pl.byd.wsg.promand.project1.graph"
+            android:label="@string/title_activity_graph" >
         </activity>
         <activity
-            android:name="pl.byd.wsg.promand.project1.reportOfBoth"
-            android:label="@string/title_activity_report_of_both" >
+            android:name="pl.byd.wsg.promand.project1.report"
+            android:label="@string/title_activity_report" >
         </activity>
-
-        <activity android:name=".graphBoth"
-            android:label="@string/title_activity_graph_both"/>
-
-        <activity android:name=".reportOfBoth"
-            android:label="@string/title_activity_report_both"/>
-
     </application>
 
 </manifest>

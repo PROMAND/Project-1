@@ -7,5 +7,8 @@
     <string name="title_activity_graph_both">graphBoth</string>
     <string name="title_activity_report_both">reportBoth</string>
     <string name="title_activity_report_of_both">reportOfBoth</string>
+    <string name="title_activity_charts_both">chartsBoth</string>
+    <string name="title_activity_graph">graph</string>
+    <string name="title_activity_report">report</string>
 
 </resources>

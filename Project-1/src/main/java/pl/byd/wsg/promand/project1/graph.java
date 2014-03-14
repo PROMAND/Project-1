@@ -1,6 +1,5 @@
 package pl.byd.wsg.promand.project1;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -11,21 +10,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
-import android.widget.ListView;
-import android.widget.TextView;
 
-import android.app.Activity;
-import android.view.View.OnClickListener;
-import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.ListView;
-
-public class reportOfBoth extends ActionBarActivity {
+public class graph extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_report_of_both);
+        setContentView(R.layout.activity_graph);
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
@@ -39,7 +30,7 @@ public class reportOfBoth extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.report_of_both, menu);
+        getMenuInflater().inflate(R.menu.graph, menu);
         return true;
     }
 
@@ -66,17 +57,9 @@ public class reportOfBoth extends ActionBarActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_report_of_both, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_graph, container, false);
             return rootView;
         }
-    }
-       private void displayText(String message){
-        TextView textView = (TextView) findViewById(R.id.listView);
-        textView.setText(message);
-    }
-    public void openTableList() {
-        displayText("plaplapla");
-
     }
 
 }
