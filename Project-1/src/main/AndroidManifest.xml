@@ -24,6 +24,13 @@
             android:name="pl.byd.wsg.promand.project1.reportOfBoth"
             android:label="@string/title_activity_report_of_both" >
         </activity>
+
+        <activity android:name=".graphBoth"
+            android:label="@string/title_activity_graph_both"/>
+
+        <activity android:name=".reportOfBoth"
+            android:label="@string/title_activity_report_both"/>
+
     </application>
 
 </manifest>

@@ -9,6 +9,7 @@
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
+        android:background="@drawable/background"
         />
 
     <Button
@@ -44,6 +45,7 @@
         android:id="@+id/graphsOfBothBtn"
         android:layout_marginTop="318dp"
         android:text="Charts of both buildings"
+        android:onClick="openChart"
         android:textColor="#ffff"
         android:background="#372d20"
         android:layout_alignParentTop="true"
@@ -57,6 +59,7 @@
         android:layout_marginTop="418dp"
         android:background="#372d20"
         android:text="Reports of both buildings"
+        android:onClick="openReport"
         android:textStyle="bold"
         android:textColor="#ffff"
         android:layout_alignParentTop="true"

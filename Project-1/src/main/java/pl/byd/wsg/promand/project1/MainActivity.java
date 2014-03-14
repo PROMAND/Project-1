@@ -21,13 +21,8 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
         button1 = (Button) findViewById(R.id.graphsOfBothBtn);
         btn2 = (Button) findViewById(R.id.reportsOfBothBtn);
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),graphBoth.class);
-                startActivity(i);
-            }
-        });
+
+
 
     }
 
@@ -53,5 +48,13 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
+    public void openChart() {
+        Intent i = new Intent(MainActivity.this,graphBoth.class);
+        startActivity(i);
+    }
 
+    public void openReport() {
+        Intent i = new Intent(MainActivity.this, reportOfBoth.class);
+        startActivity(i);
+    }
 }
