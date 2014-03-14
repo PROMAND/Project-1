@@ -14,7 +14,7 @@
     <Button
         android:layout_width="120dp"
         android:layout_height="80dp"
-        android:text="Graphs"
+        android:text="Graphswdaadw"
         android:id="@+id/graphsOfBothBtnBtn"
         android:background="#372d60"
         android:textStyle="bold"
