@@ -1,5 +1,6 @@
 package pl.byd.wsg.promand.project1;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -60,6 +61,10 @@ public class reportOfBoth extends ActionBarActivity {
             View rootView = inflater.inflate(R.layout.fragment_report_of_both, container, false);
             return rootView;
         }
+
+    }
+    public void openTableList() {
+
     }
 
 }
