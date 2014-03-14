@@ -11,6 +11,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import android.app.Activity;
+import android.view.View.OnClickListener;
+import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.ListView;
 
 public class reportOfBoth extends ActionBarActivity {
 
@@ -61,9 +69,13 @@ public class reportOfBoth extends ActionBarActivity {
             View rootView = inflater.inflate(R.layout.fragment_report_of_both, container, false);
             return rootView;
         }
-
+    }
+       private void displayText(String message){
+        TextView textView = (TextView) findViewById(R.id.listView);
+        textView.setText(message);
     }
     public void openTableList() {
+        displayText("plaplapla");
 
     }
 
