@@ -21,7 +21,7 @@ public class MainActivity extends ActionBarActivity {
         btnReport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { //button click
-                Intent i = new Intent(MainActivity.this,Report.class);
+                Intent i = new Intent(MainActivity.this,report.class);
                 startActivity(i);
             }
         });
