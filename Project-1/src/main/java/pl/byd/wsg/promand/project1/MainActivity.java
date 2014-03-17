@@ -1,29 +1,12 @@
 package pl.byd.wsg.promand.project1;
 
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.PorterDuff;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.R.menu;
 import android.view.View;
-import android.view.ViewGroup;
-import android.os.Build;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ProgressBar;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import java.net.NetworkInterface;
 
 public class MainActivity extends ActionBarActivity {
     Button btnGraph,btnReport;
@@ -38,14 +21,14 @@ public class MainActivity extends ActionBarActivity {
         btnReport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { //button click
-                Intent i = new Intent(MainActivity.this,report.class);
+                Intent i = new Intent(MainActivity.this,Report.class);
                 startActivity(i);
             }
         });
         btnGraph.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this,graph.class);
+                Intent i = new Intent(MainActivity.this,Graph.class);
                 startActivity(i);
             }
         });
