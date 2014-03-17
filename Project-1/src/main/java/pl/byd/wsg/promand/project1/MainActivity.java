@@ -18,36 +18,54 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.net.NetworkInterface;
 
 public class MainActivity extends ActionBarActivity {
-   Button btnGraph,btnReport;
+    Button btnGraph,btnReport;
+    //TextView conText = (TextView) findViewById(R.id.txtConStatus);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnGraph = (Button) findViewById(R.id.graphsOfBothBtn);
         btnReport = (Button) findViewById(R.id.reportsOfBothBtn);
+        ///////////////////////////////////////BUTTONS
         btnReport.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this,report.class);
+            public void onClick(View view) { //button click
+                Intent i = new Intent(MainActivity.this,Report.class);
                 startActivity(i);
             }
         });
         btnGraph.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this,graph.class);
+                Intent i = new Intent(MainActivity.this,Graph.class);
                 startActivity(i);
             }
         });
+        /////// END OF BUTTONS
+     //   isConnectedStatus(isNetworkAvailable());
     }
-
-
+//    private void isConnectedStatus(boolean con){
+//        if(con == true){
+//            conText.setText("Connected");
+//            conText.setTextColor(Color.GREEN);
+//        } else {
+//            conText.setText("No internet connection");
+//            conText.setTextColor(Color.RED);
+//        }
+//    }
+//    private boolean isNetworkAvailable(){
+//        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+//        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+//        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -63,10 +81,8 @@ public class MainActivity extends ActionBarActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
+        return id == R.id.action_settings || super.onOptionsItemSelected(item);
+
     }
 
 

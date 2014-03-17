@@ -1,28 +1,36 @@
 package pl.byd.wsg.promand.project1;
 
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.os.Build;
+import android.view.inputmethod.InputMethodManager;
+import android.webkit.WebView;
+import android.widget.EditText;
 
-public class graph extends ActionBarActivity {
+import java.security.Provider;
+
+
+public class Graph extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_graph);
+        String graphURL;
+        EditText buildTxt1 = (EditText) findViewById(R.id.txtBuild1);
+        String pavadinimas1 = buildTxt1.toString();
+        //InputMethodManager imm = (InputMethodManager)this.getSystemService(INPUT_METHOD_SERVICE);
 
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
-                    .commit();
-        }
+
+
+        graphURL = "https://chart.googleapis.com/chart?cht=p3&chd=t:60,40&chs=250x100&chl=Building1|Building2";
+        Log.v("graphURL :",graphURL);
+        WebView webview = (WebView) findViewById(R.id.webView1);
+       // webview.loadUrl("file:///assert/graphic.htm");
+        webview.loadUrl(graphURL);
     }
 
 
@@ -44,22 +52,6 @@ public class graph extends ActionBarActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    /**
-     * A placeholder fragment containing a simple view.
-     */
-    public static class PlaceholderFragment extends Fragment {
-
-        public PlaceholderFragment() {
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_graph, container, false);
-            return rootView;
-        }
     }
 
 }

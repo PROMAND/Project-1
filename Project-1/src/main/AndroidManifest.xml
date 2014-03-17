@@ -4,7 +4,6 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logo2"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
@@ -16,14 +15,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name="pl.byd.wsg.promand.project1.graph"
+            android:name="pl.byd.wsg.promand.project1.Graph"
             android:label="@string/title_activity_graph" >
         </activity>
         <activity
-            android:name="pl.byd.wsg.promand.project1.report"
+            android:name="pl.byd.wsg.promand.project1.Report"
             android:label="@string/title_activity_report" >
         </activity>
+        
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

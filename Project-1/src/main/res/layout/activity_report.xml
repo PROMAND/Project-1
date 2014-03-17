@@ -4,58 +4,12 @@
     android:id = "@+id/container"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-
-
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/imageView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:background="@drawable/background"
-        />
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="80dp"
-        android:text="Graph"
-        android:id="@+id/graphsOfBothBtnBtn"
-        android:background="#372d20"
-        android:textStyle="bold"
-        android:textColor="#ffff"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="55dp"/>
-
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="80dp"
-        android:text="Table of prices"
-        android:onClick="openTableList"
-        android:background="#372d20"
-        android:textColor="#ffff"
-        android:textStyle="bold"
-        android:id="@+id/button"
-        android:layout_alignTop="@+id/graphsOfBothBtnBtn"
-        android:layout_centerHorizontal="true" />
-
-
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="80dp"
-        android:text="History"
-        android:background="#372d20"
-        android:textColor="#ffff"
-        android:textStyle="bold"
-        android:id="@+id/button2"
-        android:layout_alignTop="@+id/button"
-        android:layout_alignParentRight="true" />
-
-    <ListView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:id="@+id/listView"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true" />
-
-
 </RelativeLayout>

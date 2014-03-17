@@ -127,6 +127,26 @@
         android:background="@drawable/quickmenu"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Connecting..."
+        android:textColor="#ffff"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="270dp"
+        android:id="@+id/txtConStatus"
+        android:layout_alignBottom="@+id/quickMenuBtn"
+         />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/imageView2"
+        android:background="@drawable/logo"
+        android:layout_toRightOf="@+id/quickMenuBtn" />
 
 
 </RelativeLayout>
