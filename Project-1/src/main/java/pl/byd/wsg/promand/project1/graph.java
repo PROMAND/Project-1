@@ -13,7 +13,7 @@ import android.widget.EditText;
 import java.security.Provider;
 
 
-public class Graph extends ActionBarActivity {
+public class graph extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

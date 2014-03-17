@@ -6,7 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class Report extends ActionBarActivity {
+public class report extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -38,14 +38,14 @@ public class MainActivity extends ActionBarActivity {
         btnReport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { //button click
-                Intent i = new Intent(MainActivity.this,Report.class);
+                Intent i = new Intent(MainActivity.this,report.class);
                 startActivity(i);
             }
         });
         btnGraph.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this,Graph.class);
+                Intent i = new Intent(MainActivity.this,graph.class);
                 startActivity(i);
             }
         });
